@@ -15,7 +15,7 @@ public class Main {
                     if (choice == 1) {
                         System.out.println("Name your kitty: ");
                         name = CheckInput.getString();
-                        Cat c = new Tabby(name);
+                        Tabby c = new Tabby(name);
                         interactCat(c, p);
                     }
                     break;
@@ -55,17 +55,17 @@ public class Main {
             switch(choice) {
                 case 1:
                     if (choice == 1) {
-                        c.feed(p);
+                        System.out.println(c.feed(p));
                     }
                     break;
                 case 2:
                     if (choice == 2) {
-                        c.play(p);
+                        System.out.println(c.play(p));
                     }
                     break;
                 case 3:
                     if (choice == 3) {
-                        c.pet(p);
+                        System.out.println(c.pet(p));
                     }
                     break;
                 default:
