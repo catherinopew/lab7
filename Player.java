@@ -15,13 +15,13 @@ public class Player {
 
     public boolean isDead() {
         boolean dead = false;
-        if (hp == 0) {
+        if (hp <= 0) {
             dead = true;
         }
         return dead;
     }
 
     public String toString() {
-        return "You have" + getHp() + "/" + hp + " HP";
+        return "You have " + getHp() + "/" + hp + " HP";
     }
 }
