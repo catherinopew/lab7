@@ -34,7 +34,7 @@ public abstract class Tabby extends Cat{
             return getName() + " is too hungry and scratches you.";
         }
         else{
-            return getName()+  " happily allows you to pet them.";
+            return getName() + " happily allows you to pet them.";
         }
     }
 }
