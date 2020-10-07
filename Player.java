@@ -33,6 +33,6 @@ public class Player {
     *@return player's HP level
     **/
     public String toString() {
-        return "You have " + getHp() + "/" + hp + " HP";
+        return "You have " + getHp() + "/10 HP";
     }
 }
