@@ -26,7 +26,7 @@ public class Tiger extends Cat{
     }
 
     public String pet(Player p) {
-        if (getHunger() == 1) {
+        if (getHunger() <= 3) {
             p.takeDamage(4);
             return getName() + "is pretty hungry and mauls you.";
         }
