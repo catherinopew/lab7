@@ -17,7 +17,7 @@ public class Ocelot extends Cat{
     
 	@Override
 	public String play(Player p){
-		if(getHunger() == 1){
+		if(getHunger() <= 3){
 			p.takeDamage(3);
 			return getName() + " is too hungry and mauls you.";
 		}
