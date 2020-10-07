@@ -1,7 +1,8 @@
 public class Main {
     public static void main (String [] args) {
         int choice = 0;
-        while (choice != -1) {
+        Player p = new Player();
+        do { 
             System.out.println("Choose a kitty:");
             System.out.println("1. Tabby Cat");
             System.out.println("2. Ocelot");
@@ -9,7 +10,6 @@ public class Main {
 
             choice = CheckInput.getIntRange(1, 3);
             String name = "";
-            Player p = new Player();
             switch(choice) {
                 case 1:
                     if (choice == 1) {
@@ -35,9 +35,11 @@ public class Main {
                         interactCat(c, p);
                     }
                     break;
-                default:
-                    System.out.println("Bye!");
             }
+        } while(p.isDead() == false);
+
+        if (p.isDead() == true) {
+            System.out.println("Game over.");
         }
     }
 
@@ -55,21 +57,19 @@ public class Main {
             switch(choice) {
                 case 1:
                     if (choice == 1) {
-                        c.feed(p);
+                        System.out.println(c.feed(p));
                     }
                     break;
                 case 2:
                     if (choice == 2) {
-                        c.play(p);
+                        System.out.println(c.play(p));
                     }
                     break;
                 case 3:
                     if (choice == 3) {
-                        c.pet(p);
+                        System.out.println(c.pet(p));
                     }
                     break;
-                default:
-                    System.out.println("You have died. Game over.");
             }
         }
     }
