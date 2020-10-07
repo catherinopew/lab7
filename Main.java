@@ -31,7 +31,7 @@ public class Main {
                     if (choice == 3) {
                         System.out.println("Name your kitty: ");
                         name = CheckInput.getString();
-                        Cat c = newTiger(name);
+                        Cat c = new Tiger(name);
                         interactCat(c, p);
                     }
                     break;
@@ -44,7 +44,8 @@ public class Main {
     public static void interactCat(Cat c, Player p) {
         int choice = 0;
         while(p.isDead() == false) {
-            System.out.println(c. //status of cat's hunger
+            System.out.println(p.toString());
+            System.out.println(c.toString());
             System.out.println("1. Feed your cat");
             System.out.println("2. Play with your cat");
             System.out.println("3. Pet your cat");
@@ -68,9 +69,7 @@ public class Main {
                     }
                     break;
                 default:
-                    
-                
-
+                    System.out.println("You have died. Game over.");
             }
         }
     }
