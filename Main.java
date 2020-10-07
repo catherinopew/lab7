@@ -4,7 +4,9 @@
  * @version 10/6/2020
  * Copyright (C) 2020 Marvin Barajas and Catherine Bui. All Rights Reserved.
  */
+
 public class Main {
+    /** The main method where player can choose their cat and name it. */
     public static void main (String [] args) {
         int choice = 0;
         Player p = new Player();
@@ -49,6 +51,11 @@ public class Main {
         }
     }
 
+    /** The player interacts with the cat and certain results occur
+     * based on the cat's hunger level
+     * @param c the cat
+     * @param p Player interacting with cat
+     */
     public static void interactCat(Cat c, Player p) {
         int choice = 0;
         while(p.isDead() == false) {
