@@ -1,3 +1,9 @@
+/**
+ * Program to simulate player interaction with their cat
+ * @author Group 16: Marvin Barajas and Catherine Bui
+ * @version 10/6/2020
+ * Copyright (C) 2020 Marvin Barajas and Catherine Bui. All Rights Reserved.
+ */
 public class Main {
     public static void main (String [] args) {
         int choice = 0;
