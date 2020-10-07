@@ -1,4 +1,4 @@
-public abstract class Tabby extends Cat{
+public class Tabby extends Cat{
 	public Tabby(String n){
         super(n);
     }
