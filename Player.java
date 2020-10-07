@@ -22,6 +22,6 @@ public class Player {
     }
 
     public String toString() {
-        return "You have " + getHp() + "/" + hp + " HP";
+        return "You have " + getHp() + "/10 HP";
     }
 }
