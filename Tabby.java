@@ -17,7 +17,7 @@ public abstract class Tabby extends Cat{
 
 	@Override
 	public String play(Player p){
-        if(getHunger() == 1){
+        if(getHunger() <= 3){
             p.takeDamage(2);
             return getName() + " is too hungry and scratches you.";
         }
@@ -29,7 +29,7 @@ public abstract class Tabby extends Cat{
 
 	@Override
     public String pet(Player p){
-        if(getHunger() == 1){
+        if(getHunger() <= 3){
             p.takeDamage(2);
             return getName() + " is too hungry and scratches you.";
         }
