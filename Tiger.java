@@ -3,6 +3,7 @@ public class Tiger extends Cat{
         super(n);
     }
 
+    @Override
     public String feed(Player p) {
         if(getHunger() != 10) {
             incrementHunger(2);
@@ -14,6 +15,7 @@ public class Tiger extends Cat{
         }
     }
 
+    @Override
     public String play(Player p) {
         if(getHunger() == 1) {
             p.takeDamage(4);
@@ -25,6 +27,7 @@ public class Tiger extends Cat{
         }
     }
 
+    @Override
     public String pet(Player p) {
         if (getHunger() <= 3) {
             p.takeDamage(4);
