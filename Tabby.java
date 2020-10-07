@@ -1,5 +1,5 @@
 /**represents cat type Tabby*/
-public abstract class Tabby extends Cat{
+public class Tabby extends Cat{
 	/**initializes Tabby with given name
 	 * @param n tabby's name
 	 * */
