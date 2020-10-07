@@ -13,14 +13,14 @@ public abstract class Cat extends Player{
 		name = n;
 	}
 
-	/** Gets the cat's name
+	/** Returns the cat's name
 	 * @return cat's name
 	 */
 	public String getName(){
 		return name;
 	}
 
-	/** Gets the cat's hunger level
+	/** Returns the cat's hunger level
 	 * @return hunger level
 	 */
 	int getHunger(){
@@ -59,16 +59,16 @@ public abstract class Cat extends Player{
 
 	/** Feed the cat
 	 * @param p player interacting with cat 
-    	 */
-   	 public abstract String feed(Player p);
+         */
+    	public abstract String feed(Player p);
     
 	/** Play with the cat
 	 * @param p player interacting with cat
     	 */
-    	public abstract String play(Player p);
+   	public abstract String play(Player p);
     
 	/** Pet the cat
 	 * @param p player petting cat 
-    	 */
+     	 */
 	public abstract String pet(Player p);
 }
