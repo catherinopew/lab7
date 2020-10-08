@@ -1,5 +1,5 @@
 /** An abstract class to simulate a Cat */
-public abstract class Cat extends Player{
+public abstract class Cat {
 
 	/** Name of player's cat */
 	private String name;
